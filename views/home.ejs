@@ -1,0 +1,61 @@
+<%- include("partials/header"); -%>
+
+<div
+  class="fiat-crypto-table table-responsive"
+  style="margin: 0px auto; padding: 50px"
+>
+  <table class="table table-borderless text-center">
+    <thead>
+      <tr>
+        <th>
+          <h4><span class="pointer">#</span></h4>
+        </th>
+        <th>
+          <h4><span class="pointer">Name</span></h4>
+        </th>
+        <th>
+          <h4><span class="pointer">Last</span></h4>
+        </th>
+        <th>
+          <h4><span class="pointer">Buy / Sell Price</span></h4>
+        </th>
+        <th>
+          <h4><span class="pointer">Volume</span></h4>
+        </th>
+        <th>
+          <h4><span class="pointer">Base unit</span></h4>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% items.forEach(function(item, index){%>
+      <tr class="fiat-crypto-table">
+        <td class="align-middle"><h4 class="table-text"><%=index+1 %></h4></td>
+        <td class="align-middle">
+          <a target="_blank" href="#"
+            ><h4 class="table-text">
+              <span class="exchange-name"><%=item.name %></span>
+            </h4></a
+          >
+        </td>
+        <td class="align-middle">
+          <h4 class="table-text">₹<%=item.last %></h4>
+        </td>
+        <td class="align-middle">
+          <h4 class="table-text">
+            <span>₹<%=item.buy %> / ₹<%=item.sell%></span>
+          </h4>
+        </td>
+        <td class="align-middle">
+          <h4 class="table-text color-green"><%=item.volume%></h4>
+        </td>
+        <td class="align-middle">
+          <h4 class="table-text color-green">▲ <%=item.base_unit%></h4>
+        </td>
+      </tr>
+      <%})%>
+    </tbody>
+  </table>
+</div>
+<hr />
+<%- include("partials/footer"); -%>

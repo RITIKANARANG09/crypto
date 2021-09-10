@@ -1,0 +1,94 @@
+.dark-theme {
+  position: relative;
+  background: #191d28;
+  min-height: 100vh;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+}
+.main {
+  padding: 20px 30px 0px;
+}
+.fiat-logo {
+  width: 80%;
+  /* max-height: 44px; */
+  padding: 10px;
+}
+.logo-text {
+  font-family: Oswald, sans-serif;
+  margin-top: -18px;
+  margin-left: 20px;
+  opacity: 0.8;
+  font-size: 18px;
+  color: gray;
+}
+.telegram-logo {
+  height: 15px;
+  margin-right: 10px;
+}
+.telegram-logo-text {
+  text-decoration: none;
+}
+.header-telegram-button {
+  margin: 10px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background-color: #3dc6c1;
+  color: #fff !important;
+  margin-left: 150px;
+}
+.progress-bar-wrapper {
+  height: 36px;
+  width: 36px;
+  margin: 10px;
+}
+.pointer {
+  color: gray;
+}
+.table-text {
+  color: #fff;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tbody tr {
+  background-color: #2e3241;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  margin: 0;
+}
+
+.theme-dark .fiat-crypto-table {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.color-green {
+  color: rgb(61, 198, 193);
+}
+.exchange-name {
+  padding-left: 15px;
+}
+.theme-dark .fiat-crypto-table td h4 {
+  font-family: Oswald;
+  font-size: 24px;
+  margin: 0;
+  opacity: 1;
+}
+footer {
+  border-top: 2px solid #2e3241;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 13px;
+  width: 100%;
+  text-decoration: none;
+}
