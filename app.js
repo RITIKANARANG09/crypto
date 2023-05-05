@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/stockDB", {
+mongoose.connect("mongodb+srv://yash:yash3019@cluster0.nqymfrt.mongodb.net/stockSchema", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
